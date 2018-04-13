@@ -15,15 +15,21 @@ const styles = StyleSheet.create({
     margin: 10
   }
 });
-
-const SecondScreen = () => {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.welcome}>THIS IS THE SECOND SCREEN!</Text>
-      <Text style={styles.welcome}>Appreciate for your help! Well done!!!</Text>
-    </View>
-  );
-};
+class SecondScreen extends Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text style={styles.welcome}>THIS IS THE SECOND SCREEN!</Text>
+        <Text style={styles.welcome}>
+          Appreciate for your help! Well done!!!
+        </Text>
+        <Text style={styles.welcome}>
+          Appreciate for your help! Well done!!!
+        </Text>
+      </View>
+    );
+  }
+}
 
 SecondScreen.navigationOptions = {
   title: "Second Screen Title"
