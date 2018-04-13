@@ -26,6 +26,9 @@ class SecondScreen extends Component {
         <Text style={styles.welcome}>
           Appreciate for your help! Well done!!!
         </Text>
+        <Text style={styles.welcome}>
+          Appreciate for your help! Well done!!!
+        </Text>
       </View>
     );
   }

@@ -37,7 +37,10 @@ export default class MyReactNativeApp extends Component {
         },
         {
           text: "Update Now",
-          onPress: () => console.log("Update Now pressed")
+          onPress: () => {
+            console.log("Update Now pressed");
+            CodePush.restartApp();
+          }
         }
       ],
       { cancelable: false }
@@ -48,7 +51,6 @@ export default class MyReactNativeApp extends Component {
     switch (status) {
       case 0:
         console.log("Up to date");
-        this.showAlertToRestart();
         break;
       case 1:
         console.log("Update installed");
@@ -92,7 +94,6 @@ export default class MyReactNativeApp extends Component {
       this.syncStatus
     );
     this.props.navigation.navigate("Second");
-    //CodePush.restartApplication();
   }
 }
 
